@@ -51,6 +51,8 @@
         }
         &--content{
             min-height: 9rem;
+            height: 9rem;
+            max-height: 9rem;
             overflow: hidden;
         }
         &--content-wrapper{
@@ -78,6 +80,12 @@
             width: 100%;
             position: absolute;
             bottom: 0;
+        }
+        &--title{
+            max-height: 5rem;
+            height: 5rem;
+            min-height: 5rem;
+            overflow: hidden;
         }
     }
 }

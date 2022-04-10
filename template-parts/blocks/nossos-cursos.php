@@ -13,9 +13,9 @@ if ( ! $title || empty( $title ) ) {
 /* if ( ! $subtitle || empty( $subtitle ) ) {
 	$subtitle = 'Nossos Cursos';
 }; */
-if ( ! $description || empty( $description ) ) {
+/* if ( ! $description || empty( $description ) ) {
 	$description = 'Libero dignissimos, tempore temporibus et nostrum, alias saepe praesentium ullam consequatur iure animi perspiciatis';
-};
+}; */
 
 
 ?>
@@ -38,7 +38,7 @@ if ( ! $description || empty( $description ) ) {
 
 <div class="border-b-4 border-pec-bluelight w-1/12 mx-auto my-16" data-anime="right"></div>
 <h4 class="cursos__subtitle font-poppins mt-12 text-3xl w-5/6 md:w-1/3 m-auto" data-anime="left">
-    Libero dignissimos, tempore temporibus et nostrum, alias saepe praesentium ullam consequatur iure animi perspiciatis
+    <?php echo $description ?>
 </h4>
 <div class="cursos__wrapper grid grid-cols-1 md:grid-cols-3 mt-16 gap-12">
     <?php
