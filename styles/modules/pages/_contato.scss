@@ -1,0 +1,67 @@
+.contato-text {
+  font-size: 2rem;
+}
+.contato-text > .row > div > h3 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.page-wraper.contact {
+  height: 100%;
+  padding-top: 5%;
+}
+@media (max-width: 450px) {
+  .page-wraper.contact {
+    padding: 5% 5% 00 5%;
+  }
+}
+label.wpforms-field-label {
+  color: white;
+}
+button.primary.white-bg {
+  background-color: white !important;
+  color: var(--primaryColor) !important;
+  position: relative !important;
+  border-radius: 100px !important;
+  font-size: 1.5rem !important;
+  padding: 1.5% 6% !important;
+  letter-spacing: 0.3rem !important;
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: uppercase !important;
+}
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+  color: #ff3c3c;
+}
+div.wpforms-container-full .wpforms-form input[type="date"],
+div.wpforms-container-full .wpforms-form input[type="datetime"],
+div.wpforms-container-full .wpforms-form input[type="datetime-local"],
+div.wpforms-container-full .wpforms-form input[type="email"],
+div.wpforms-container-full .wpforms-form input[type="month"],
+div.wpforms-container-full .wpforms-form input[type="number"],
+div.wpforms-container-full .wpforms-form input[type="password"],
+div.wpforms-container-full .wpforms-form input[type="range"],
+div.wpforms-container-full .wpforms-form input[type="search"],
+div.wpforms-container-full .wpforms-form input[type="tel"],
+div.wpforms-container-full .wpforms-form input[type="text"],
+div.wpforms-container-full .wpforms-form input[type="time"],
+div.wpforms-container-full .wpforms-form input[type="url"],
+div.wpforms-container-full .wpforms-form input[type="week"],
+div.wpforms-container-full .wpforms-form select,
+div.wpforms-container-full .wpforms-form textarea {
+  border-radius: 3px !important;
+}
+#wpforms-form-108 > .wpforms-submit-container > button#wpforms-submit-108 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  --tw-bg-opacity: 1;
+  background-color: var(--pec-blue-dark);
+  border-radius: 3px;
+  color: white;
+  border: 0 solid transparent;
+  width: 100%;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+    padding: 0!important;
+}

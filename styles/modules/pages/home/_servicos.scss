@@ -1,0 +1,24 @@
+.servicos {
+  background: url("../images/servicos.png");
+
+  /* background-attachment: fixed; */
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72%); */
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  min-width: 100%;
+  min-height: 86rem;
+}
+.servicos-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin-top: -9rem;
+}
+@media (max-width: 500px) {
+  .servicos {
+    background: url("../images/servicos.jpg");
+  }
+}

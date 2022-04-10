@@ -1,0 +1,21 @@
+#header{
+    background-color: white;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s;
+    width: 100%;
+    z-index: 99;
+}
+
+.slideUp {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    transition: transform .5s ease-out;
+}
+
+.slideDown {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    transition: transform .5s ease-out;
+}

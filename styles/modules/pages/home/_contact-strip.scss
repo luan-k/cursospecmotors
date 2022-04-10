@@ -1,0 +1,11 @@
+.strip-contato > div.grid > div.grid {
+  & > a.whatsapp {
+    background-color: #25d366;
+  }
+  & > a.instagram {
+    background-color: #c13584;
+  }
+  & > a.facebook {
+    background-color: #4267b2;
+  }
+}

@@ -1,0 +1,143 @@
+/* .wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* .btn-nav {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.35s;
+  z-index: 1;
+}
+
+.btn-nav:before,
+.btn-nav:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: var(--darkPrimary);
+  z-index: -1;
+  transition: all 0.35s;
+}
+.btn-nav.current-menu-item:before,
+.btn-nav.current-menu-item:after {
+  background: var(--greenPrimary);
+}
+
+.btn-nav:before {
+  opacity: 0.5;
+}
+
+.btn-nav:after {
+  transition-delay: 0.2s;
+}
+
+.btn-nav:hover {
+  color: #fff;
+}
+.btn-nav.btn-nav.current-menu-item:hover {
+  color: var(--darkPrimary);
+}
+
+.btn-nav:hover:before,
+.btn-nav:hover:after {
+  top: 0;
+} */
+
+
+a {
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  color: #84c2ff;
+  text-decoration: none;
+}
+a.transparent {
+  background-size: 100% 200%;
+}
+a.underline-left-right::before,
+a.underline-up-and-out::before,
+a.underline-up-down::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;  /* 100% will cover entire background of text */
+  border-radius: 4px;
+  background-color: #84c2ff;
+  bottom: 0;
+  left: 0;  
+}
+
+a.underline-left-right {
+  position: relative;
+}
+a.underline-left-right::before {
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+a.underline-left-right:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+a.underline-up-and-out {
+  position: relative;
+}
+a.underline-up-and-out::before {
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform .5s ease-in-out;
+}
+a.underline-up-and-out:hover::before {
+  transform-origin: bottom;
+  transform: scaleY(1);
+}
+
+a.underline-up-down {
+  position: relative;
+}
+a.underline-up-down::before {
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform .5s ease-in-out;
+}
+a.underline-up-down:hover::before {
+  transform-origin: bottom;
+  transform: scaleY(1);
+}
+
+/* ===================== */
+
+.btn-nav::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;  /* 100% will cover entire background of text */
+  border-radius: 4px;
+  background-color: var(--pec-blue-dark);
+  bottom: 0;
+  left: 0;  
+}
+
+.btn-nav {
+  position: relative;
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+.btn-nav::before {
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+.btn-nav:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}

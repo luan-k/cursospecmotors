@@ -1,0 +1,58 @@
+footer {
+  padding: 3% 0;
+  position: relative;
+  background: var(--pec-gray-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background: -moz-linear-gradient(
+    322deg,
+    rgba(98, 198, 124, 1) 0%,
+    rgba(19, 90, 68, 1) 25%,
+    rgba(0, 64, 55, 1) 47%,
+    rgba(9, 77, 62, 1) 69%,
+    rgba(98, 198, 124, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    322deg,
+    rgba(98, 198, 124, 1) 0%,
+    rgba(19, 90, 68, 1) 25%,
+    rgba(0, 64, 55, 1) 47%,
+    rgba(9, 77, 62, 1) 69%,
+    rgba(98, 198, 124, 1) 100%
+  );
+  background: linear-gradient(
+    322deg,
+    rgba(98, 198, 124, 1) 0%,
+    rgba(19, 90, 68, 1) 25%,
+    rgba(0, 64, 55, 1) 47%,
+    rgba(9, 77, 62, 1) 69%,
+    rgba(98, 198, 124, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#62c67c",endColorstr="#62c67c",GradientType=1); */
+}
+.footer-text {
+  color: inherit;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.clip-footer-home {
+ /*  clip-path: polygon(0 33%, 100% 0, 100% 100%, 0% 100%); */
+}
+
+div.map-responsive > iframe {
+  min-width: 100%;
+}
+@media (max-width: 500px) {
+  .footer-text {
+    font-size: 3.3vw;
+  }
+  /* .clip-footer-home {
+    -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+  } */
+}
