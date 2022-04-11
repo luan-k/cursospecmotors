@@ -70,15 +70,15 @@
 
     <!-- DEPOIMENTOS -->
     <section class="depoimentos px-0 text-center text-white relative" id="depoimentos" data-anime="bottom">
-        <h2 class="cursos__title--front title font-bold w-1/2 md:w-1/3 m-auto" data-anime="right">
+        <h2 class="cursos__title--front title font-bold w-11/12 md:w-1/3 m-auto" data-anime="right">
             O que os alunos dizem sobre
         </h2>
-        <h3 data-anime="left" class="cursos__title--cursive mt-3 font-playfair text-pec-bluelight italic text-7xl font-bold w-1/2 md:w-1/3 m-auto">
+        <h3 data-anime="left" class="cursos__title--cursive mt-3 font-playfair text-pec-bluelight italic text-7xl font-bold w-11/12 md:w-1/3 m-auto">
             nossos cursos
         </h3>
         <div data-anime="right" class="border-b-4 border-pec-bluelight w-1/12 mx-auto mt-16 mb-80"></div>
         
-        <div class="depoimentos__wrapper relative slider slider_depoimentos">
+        <div class="depoimentos__wrapper relative slider slider_depoimentos pb-12">
             <input id="radio-depoimentos" type="radio" name="slider-depoimentos" title="slide1" checked="checked" class="slider__nav radio-depoimentos" data-anime="left" />
             <input id="radio-depoimentos-1" type="radio" name="slider-depoimentos" title="slide2" class="slider__nav radio-depoimentos" data-anime="bottom" />
             <input id="radio-depoimentos-2" type="radio" name="slider-depoimentos" title="slide3" class="slider__nav radio-depoimentos" data-anime="right" />

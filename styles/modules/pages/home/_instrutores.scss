@@ -71,3 +71,8 @@
     padding: 15rem 12rem;
   }
 }
+@media (max-width: 600px) {
+  section.instrutores {
+    display: none;
+  }
+}

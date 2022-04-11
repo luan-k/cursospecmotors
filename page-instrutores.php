@@ -7,7 +7,7 @@ the_post();
 
 </section>
 <div class=" content text-white wysiwyg instrutores-page px-12">
-    <section class="cursos text-white relative font-poppins pt-36">
+    <section class="cursos text-white relative font-poppins pt-36 hidden">
         <div class="cursos__wrapper grid grid-cols-1 mt-16 gap-12 font-poppins">
 
             <?php 

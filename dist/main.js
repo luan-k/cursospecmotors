@@ -12943,15 +12943,19 @@ window.onload = function WindowLoad(event) {
       header.classList.remove("slideDown");
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#header").css("position", "absolute");
     }
+
+    if (screen.width < 600) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#header").css("position", "relative");
+    }
     /* else if ( new_scroll_position > last_scroll_position ) {
-     header.classList.remove( "slideUp" );
-     header.classList.add( "slideDown" );
-     console.log("ha");
-     if (last_scroll_position <= 100){
-       header.classList.remove( "slideUp" );
-       header.classList.remove( "slideDown" );
-       $( "#header" ).css( "position", "absolute" );
-     }
+      header.classList.remove( "slideUp" );
+      header.classList.add( "slideDown" );
+      console.log("ha");
+      if (last_scroll_position <= 100){
+        header.classList.remove( "slideUp" );
+        header.classList.remove( "slideDown" );
+        $( "#header" ).css( "position", "absolute" );
+      }
     }  */
 
 

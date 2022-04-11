@@ -38,7 +38,10 @@ window.onload = function WindowLoad ( event ) {
       header.classList.remove( "slideUp" );
       header.classList.remove( "slideDown" );
       $( "#header" ).css( "position", "absolute" );
-    }/* else if ( new_scroll_position > last_scroll_position ) {
+    }if(screen.width < 600){
+      $( "#header" ).css( "position", "relative" );
+    }
+    /* else if ( new_scroll_position > last_scroll_position ) {
       header.classList.remove( "slideUp" );
       header.classList.add( "slideDown" );
       console.log("ha");
