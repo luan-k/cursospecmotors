@@ -22,14 +22,14 @@ the_post();
                     <div class="instrutores__slide--wrapper">
                         <div class="instrutores__slide--content-wrapper text-white" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'instrutoresImage') ?>)">
                             <div class=" w-3/5">
-                                <h3 class="font-semibold uppercase instrutores__slide text-7xl font-poppins">
+                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl font-poppins">
                                     Nossos Instrutores:
                                 </h3>
-                                <h3 class="font-semibold instrutores__slide--title text-8xl font-poppins text-pec-bluelight">
+                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl font-poppins text-pec-bluelight">
                                     <?php echo get_the_title(); ?>
                                 </h3>
                             </div>
-                            <p class="instrutores__slide--content text-4xl w-3/5">
+                            <p class="instrutores__slide--content md:text-2xl lg:text-3xl 2xl:text-4xl w-3/5">
                                 <?php echo get_the_content() ?>
                             </p>
                             <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk flex items-center justify-center bg-pec-bluedark text-white rounded-2xl py-6 px-9 w-3/5 text-center">

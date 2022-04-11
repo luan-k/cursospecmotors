@@ -20,8 +20,12 @@
         background: white;
     }
     &__slide--wrapper{
-        /* min-height: 60rem; */
-       /*  background-color: rgba(0, 0, 0, 0.331); */
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
     }
     &__slide--content-wrapper{
       background-position: center;
@@ -34,6 +38,7 @@
       align-content: flex-start;
       justify-content: space-between;
       align-items: flex-start;
+      max-width: 1500px;
     }
     .radio-instrutores:nth-of-type(1){
         right: +3%;
@@ -55,4 +60,14 @@
 
 .instrutores-page{
   background-color: #08061c;
+}
+@media (max-width: 1300px) {
+  .instrutores__slide--content-wrapper {
+    padding: 12rem 12rem;
+  }
+}
+@media (max-width: 1133px) {
+  .instrutores__slide--content-wrapper {
+    padding: 15rem 12rem;
+  }
 }

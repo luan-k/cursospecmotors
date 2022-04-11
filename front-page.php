@@ -134,14 +134,14 @@
                     <div class="instrutores__slide--wrapper">
                         <div class="instrutores__slide--content-wrapper text-white" style="background-image: url(<?php echo get_theme_file_uri('./images/instrutor-1.png')?>)">
                             <div class=" w-3/5">
-                                <h3 class="font-semibold uppercase instrutores__slide text-7xl font-poppins">
+                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl  font-poppins">
                                     Nossos Instrutores:
                                 </h3>
-                                <h3 class="font-semibold instrutores__slide--title text-8xl font-poppins text-pec-bluelight">
+                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl font-poppins text-pec-bluelight">
                                     Ederson Luis Bilck
                                 </h3>
                             </div>
-                            <p class="instrutores__slide--content text-4xl w-3/5">
+                            <p class="instrutores__slide--content md:text-2xl lg:text-3xl 2xl:text-4xl  w-3/5">
                                 Consultor técnico Pecmotors responsável pelo setor técnico, possui
                                 mais de 8 anos de experiência no ramo de Lubrificantes, transmissões
                                 e veículos híbridos, possui mais de 40 cursos de manutenção em
@@ -158,14 +158,14 @@
                     <div class="instrutores__slide--wrapper">
                         <div class="instrutores__slide--content-wrapper text-white" style="background-image: url(<?php echo get_theme_file_uri('./images/instrutor-2.png')?>)">
                             <div class=" w-3/5">
-                                <h3 class="font-semibold uppercase instrutores__slide text-7xl font-poppins">
+                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl font-poppins">
                                     Nossos Instrutores:
                                 </h3>
-                                <h3 class="font-semibold instrutores__slide--title text-8xl font-poppins text-pec-bluelight">
+                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl font-poppins text-pec-bluelight">
                                     Luiz Gouveia
                                 </h3>
                             </div>
-                            <p class="instrutores__slide--content text-4xl w-3/5">
+                            <p class="instrutores__slide--content md:text-2xl lg:text-3xl 2xl:text-4xl w-3/5">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget
                               posuere tellus. Suspendisse condimentum lorem odio, eu consectetur
                               urna consectetur in. Maecenas tempor felis et dui dignissim commodo.
