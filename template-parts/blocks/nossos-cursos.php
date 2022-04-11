@@ -37,7 +37,7 @@ if ( ! $title || empty( $title ) ) {
 ?>
 
 <div class="border-b-4 border-pec-bluelight w-1/12 mx-auto my-16" data-anime="right"></div>
-<h4 class="cursos__subtitle font-poppins mt-12 text-3xl w-5/6 md:w-1/3 m-auto" data-anime="left">
+<h4 class="cursos__subtitle font-poppins mt-12 text-2xl w-5/6 md:w-1/3 m-auto" data-anime="left">
     <?php echo $description ?>
 </h4>
 <div class="cursos__wrapper grid grid-cols-1 md:grid-cols-3 mt-16 gap-12">
@@ -50,7 +50,7 @@ if ( ! $title || empty( $title ) ) {
         $pec_cursos_1_content 	 = $post1->post_content;
         $pec_cursos_1_image 	 = get_the_post_thumbnail_url($post1->ID, 'ProductImageList2');
         $pec_cursos_1_link       = get_the_permalink( $post1 );
-        /* var_dump($pec_cursos_1_category[0]->name); */
+        
         ?>
         <div class="cursos__curso rounded-2xl" data-anime="left" style="background-image: url()">
             <div class="cursos__curso--overlay"></div>
@@ -78,7 +78,7 @@ if ( ! $title || empty( $title ) ) {
     if ( is_object( $post2 ) ) {
         $pec_cursos_2_id   	     = $post2->ID;
         $pec_cursos_2_date       = get_field('curso_data', $pec_cursos_2_id);
-        $pec_cursos_2_category	 = get_the_category($pec_cursos_2_id);
+        $pec_cursos_2_category	 = get_the_category($pec_cursos_2_id)[0]->name;
         $pec_cursos_2_title 	 = $post2->post_title;
         $pec_cursos_2_content 	 = $post2->post_content;
         $pec_cursos_2_image 	 = get_the_post_thumbnail_url($post2->ID);
@@ -110,7 +110,7 @@ if ( ! $title || empty( $title ) ) {
     if ( is_object( $post3 ) ) {
         $pec_cursos_3_id   	     = $post3->ID;
         $pec_cursos_3_date       = get_field('curso_data', $pec_cursos_3_id);
-        $pec_cursos_3_category	 = get_the_category($pec_cursos_3_id);
+        $pec_cursos_3_category	 = get_the_category($pec_cursos_3_id)[0]->name;
         $pec_cursos_3_title 	 = $post3->post_title;
         $pec_cursos_3_content 	 = $post3->post_content;
         $pec_cursos_3_image 	 = get_the_post_thumbnail_url($post3->ID);
