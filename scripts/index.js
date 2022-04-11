@@ -28,6 +28,6 @@ $(function () {
   $("nav ul > li:last-of-type").on("click", function () {
     fa.toggleClass("fa-bars");
     fa.toggleClass("fa-times");
-    $(this).parent().children("ol").slideToggle(500);
+    $(this).parent().children("ol").slideToggle(1000);
   });
 });

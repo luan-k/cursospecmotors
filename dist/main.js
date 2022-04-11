@@ -27507,7 +27507,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()("nav ul > li:last-of-type").on("click", function () {
     fa.toggleClass("fa-bars");
     fa.toggleClass("fa-times");
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().children("ol").slideToggle(500);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().children("ol").slideToggle(1000);
   });
 });
 })();
