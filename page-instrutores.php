@@ -6,8 +6,8 @@ the_post();
 
 
 </section>
-<div class=" content text-white wysiwyg instrutores-page px-12">
-    <section class="cursos text-white relative font-poppins pt-36 hidden">
+<div class=" content text-white wysiwyg instrutores-page">
+    <section class="cursos text-white relative font-poppins pt-36">
         <div class="cursos__wrapper grid grid-cols-1 mt-16 gap-12 font-poppins">
 
             <?php 
@@ -19,20 +19,20 @@ the_post();
                 ));
                 while($instructorPage->have_posts() ) {
                     $instructorPage->the_post();?>
-                    <div class="instrutores__slide--wrapper">
+                    <div class="instrutores__slide--wrapper instrutores-page">
                         <div class="instrutores__slide--content-wrapper text-white" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'instrutoresImage') ?>)">
                             <div class=" w-3/5">
-                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl font-poppins">
+                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl text-lg font-poppins">
                                     Nossos Instrutores:
                                 </h3>
-                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl font-poppins text-pec-bluelight">
+                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl text-lg font-poppins text-pec-bluelight">
                                     <?php echo get_the_title(); ?>
                                 </h3>
                             </div>
-                            <p class="instrutores__slide--content md:text-2xl lg:text-3xl 2xl:text-4xl w-3/5">
+                            <div class="instrutores__slide--content md:text-2xl lg:text-3xl 2xl:text-4xl  w-3/5">
                                 <?php echo get_the_content() ?>
-                            </p>
-                            <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk flex items-center justify-center bg-pec-bluedark text-white rounded-2xl py-6 px-9 w-3/5 text-center">
+                            </div>
+                            <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
                                 Saiba Mais
                             </a>
                         </div>

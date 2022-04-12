@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="space-y-9 text-pec-graymid">
-                <h2 class="title font-poppins font-bold" data-anime="top">Sobre Nós</h2>
+                <h2 class="title font-poppins font-bold text-center" data-anime="top">Sobre Nós</h2>
                 <p class="generic-text text-4xl" data-anime="right">
                     Há mais de 20 anos atuando no mercado automotivo,
                     com grande know how em manutenção preventiva no
@@ -134,21 +134,21 @@
                     <div class="instrutores__slide--wrapper">
                         <div class="instrutores__slide--content-wrapper text-white" style="background-image: url(<?php echo get_theme_file_uri('./images/instrutor-1.png')?>)">
                             <div class=" w-3/5">
-                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl  font-poppins">
+                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl text-lg font-poppins">
                                     Nossos Instrutores:
                                 </h3>
-                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl font-poppins text-pec-bluelight">
+                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl text-lg font-poppins text-pec-bluelight">
                                     Ederson Luis Bilck
                                 </h3>
                             </div>
-                            <p class="instrutores__slide--content md:text-2xl lg:text-3xl 2xl:text-4xl  w-3/5">
+                            <p class="instrutores__slide--content text-xs md:text-2xl lg:text-3xl 2xl:text-4xl  w-3/5">
                                 Consultor técnico Pecmotors responsável pelo setor técnico, possui
                                 mais de 8 anos de experiência no ramo de Lubrificantes, transmissões
                                 e veículos híbridos, possui mais de 40 cursos de manutenção em
                                 transmissões, rede can, injeção, veículos híbridos e sistemas anexos,
                                 possui especializações nos Estados Unidos e México.
                             </p>
-                            <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk flex items-center justify-center bg-pec-bluedark text-white rounded-2xl py-6 px-9 w-3/5 text-center">
+                            <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
                                 Saiba Mais
                             </a>
                         </div>
@@ -158,21 +158,21 @@
                     <div class="instrutores__slide--wrapper">
                         <div class="instrutores__slide--content-wrapper text-white" style="background-image: url(<?php echo get_theme_file_uri('./images/instrutor-2.png')?>)">
                             <div class=" w-3/5">
-                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl font-poppins">
+                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl text-lg font-poppins">
                                     Nossos Instrutores:
                                 </h3>
-                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl font-poppins text-pec-bluelight">
+                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl text-lg font-poppins text-pec-bluelight">
                                     Luiz Gouveia
                                 </h3>
                             </div>
-                            <p class="instrutores__slide--content md:text-2xl lg:text-3xl 2xl:text-4xl w-3/5">
+                            <p class="instrutores__slide--content text-xs md:text-2xl lg:text-3xl 2xl:text-4xl  w-3/5">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget
                               posuere tellus. Suspendisse condimentum lorem odio, eu consectetur
                               urna consectetur in. Maecenas tempor felis et dui dignissim commodo.
                               Nullam nec nunc lobortis, cursus felis sed, tempus risus. Ut nibh arcu,
                               luctus vel sapien sit amet, vestibulum.
                             </p>
-                            <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk flex items-center justify-center bg-pec-bluedark text-white rounded-2xl py-6 px-9 w-3/5 text-center">
+                            <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
                                 Saiba Mais
                             </a>
                         </div>

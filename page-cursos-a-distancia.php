@@ -8,7 +8,10 @@ the_post();
 </section>
 <div class="container content text-white wysiwyg cursos-page">
     <section class="cursos text-center text-white relative font-poppins">
-        <div class="cursos__wrapper grid grid-cols-1 md:grid-cols-3 mt-16 gap-12 font-poppins">
+        <h3 class="cursos__curso--title text-5xl mb-6 mt-28 font-semibold text-white font-poppins text-center">
+            Em Breve
+        </h3>
+        <!-- <div class="cursos__wrapper grid grid-cols-1 md:grid-cols-3 mt-16 gap-12 font-poppins">
 
             <?php 
                 $today = date('Ymd');
@@ -103,7 +106,7 @@ the_post();
                         </a>
                     </div>
                 <?php
-            }wp_reset_postdata(); ?>
+            }wp_reset_postdata(); ?> -->
         </div>
     </section>
 </div>

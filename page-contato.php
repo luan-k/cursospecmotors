@@ -6,10 +6,10 @@
             <div class="col-sm-6 font-poppins">
                 <h3 class="font-poppins" data-anime="top">Telefone:</h3>
                 <ul class="font-poppins" data-anime="left">
-                    <li> (41) 9942-9899 </li>
-                    <!-- <li> (48) 998479-1962 </li> -->
+                    <li> (41) 99524-0664 </li>
+                    <li> (41) 3156-7257 </li>
                 </ul>
-                
+
                 <h3 class="mt-6 font-poppins" data-anime="left">Localização:</h3>
                 <ul class="font-poppins" data-anime="bottom">
                     <li class="font-poppins">

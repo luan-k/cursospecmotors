@@ -11,11 +11,11 @@
                             <h4 class="title-3 text-4xl font-poppins font-bold mb-6 ">
                                 Central de Atendimento
                             </h4>
-                            <!-- <p class="footer-text">
-                                <i class="fas fa-phone-alt"></i> (48) 3033-3277
-                            </p> -->
                             <p class="footer-text">
-                                <i class="fab fa-whatsapp"></i> (41) 9942-9899
+                                <i class="fas fa-phone-alt"></i> (41) 3156-7257
+                            </p>
+                            <p class="footer-text">
+                                <i class="fab fa-whatsapp"></i> (41) 99524-0664
                             </p>
                             <a class="footer-text" href="<?php echo esc_url(site_url('/contato')); ?>">
                                 <i class="far fa-envelope"></i> Enviar uma mensagem
