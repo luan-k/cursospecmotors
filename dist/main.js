@@ -12998,6 +12998,53 @@ console.log(slide1, slide2, slide3);
 
 /***/ }),
 
+/***/ "./scripts/modules/slider-next.js":
+/*!****************************************!*\
+  !*** ./scripts/modules/slider-next.js ***!
+  \****************************************/
+/***/ (() => {
+
+/* ======= Slider start ======= */
+
+/* make a loop that checks if a radio if one of the is checked, then
+    wait 5 seconds and go to the other*/
+jQuery(document).ready(function ($) {
+  $(document).ready(function () {
+    window.addEventListener("load", function () {
+      linkst = document.getElementsByTagName("a")[16];
+      linksn = document.getElementsByTagName("a")[17];
+      nextBtn = document.getElementsByClassName("next half");
+      linkst.classList.add("click-link-style");
+      linksn.classList.add("click-link-style");
+      linkst.removeAttribute("href");
+      linksn.removeAttribute("href");
+      var arrSlider = [linkst, linksn];
+      /* console.log( arrSlider); */
+
+      function checkSlider() {
+        for (i = 0; i < arrSlider.length; i++) {
+          if (arrSlider[i].classList.contains("selected")) {
+            /* arrSlider[i].classList.remove("selected"); */
+            if (arrSlider[i + 1]) {
+              arrSlider[i + 1].click();
+              /* arrSlider[i+1].classList.add("selected"); */
+            } else {
+              arrSlider[0].click();
+              /* arrSlider[0].classList.add("selected"); */
+            }
+
+            return;
+          } else {}
+        }
+      }
+
+      setInterval(checkSlider, 6000);
+    });
+  });
+});
+
+/***/ }),
+
 /***/ "./scripts/modules/throttle.js":
 /*!*************************************!*\
   !*** ./scripts/modules/throttle.js ***!
@@ -27487,7 +27534,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_animation_anime_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_animation_anime_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _modules_slick_config_product_slider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/slick-config/product-slider */ "./scripts/modules/slick-config/product-slider.js");
 /* harmony import */ var _modules_scrool_up_display_menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/scrool-up-display-menu */ "./scripts/modules/scrool-up-display-menu.js");
-/* harmony import */ var _modules_Search__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/Search */ "./scripts/modules/Search.js");
+/* harmony import */ var _modules_slider_next__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/slider-next */ "./scripts/modules/slider-next.js");
+/* harmony import */ var _modules_slider_next__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_slider_next__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_Search__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/Search */ "./scripts/modules/Search.js");
 
 
 
@@ -27497,7 +27546,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var search = new _modules_Search__WEBPACK_IMPORTED_MODULE_8__["default"]();
+
+var search = new _modules_Search__WEBPACK_IMPORTED_MODULE_9__["default"]();
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   var ulLi = jquery__WEBPACK_IMPORTED_MODULE_0___default()("nav ul > li"),
       fa = jquery__WEBPACK_IMPORTED_MODULE_0___default()("nav ul > li:last-of-type a .fa");
