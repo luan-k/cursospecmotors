@@ -166,11 +166,12 @@
                                 </h3>
                             </div>
                             <p class="instrutores__slide--content text-xs md:text-2xl lg:text-3xl 2xl:text-4xl  w-3/5">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget
-                              posuere tellus. Suspendisse condimentum lorem odio, eu consectetur
-                              urna consectetur in. Maecenas tempor felis et dui dignissim commodo.
-                              Nullam nec nunc lobortis, cursus felis sed, tempus risus. Ut nibh arcu,
-                              luctus vel sapien sit amet, vestibulum.
+                                Luiz Gouveia é Gerente comercial e técnico do Grupo Pecmotors,
+                                possui diversos cursos na área de gestão de pessoas e negócios,
+                                possui mais de 15 anos de experiencia em comercio e atendimento,
+                                especializando-se em lubrificantes e suas características,
+                                aplicações e normas. Especializado em veículos híbridos e
+                                elétricos assim como em transmissões automáticas.
                             </p>
                             <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
                                 Saiba Mais
