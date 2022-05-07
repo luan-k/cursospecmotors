@@ -57,11 +57,11 @@ if ( ! $title || empty( $title ) ) {
             <a href="<?php echo $pec_cursos_1_link ?>" class="cursos__curso--link relative w-full h-full transition-all duration-300">
                 <img src="<?php echo $pec_cursos_1_image; ?>" alt="" class="cursos__curso--img">
                 <div class="cursos__curso--content-wrapper">
-                    <div class="cursos__curso--title text-left text-4xl mb-6 mt-3 font-semibold text-pec-bluelight">
-                        <?php echo wp_trim_words( $pec_cursos_1_title, 6); ?>
+                    <div class="cursos__curso--title text-left text-3xl mb-6 mt-3 font-semibold text-pec-bluelight">
+                        <?php echo wp_trim_words( $pec_cursos_1_title, 12); ?>
                     </div>
                     <div class="border-b-2 border-pec-bluelight w-full mx-auto my-6"></div>
-                    <div class="cursos__curso--content text-left text-3xl mb-8 transition-all font-semibold duration-300 text-white">
+                    <div class="cursos__curso--content text-left text-3xl mb-6 transition-all font-semibold duration-300 text-white">
                         <?php echo wp_trim_words( $pec_cursos_1_content, 12); ?>
                     </div>
                     <div class="text-red text-white text-lg">
@@ -89,11 +89,11 @@ if ( ! $title || empty( $title ) ) {
             <a href="<?php echo $pec_cursos_2_link ?>" class="cursos__curso--link relative w-full h-full transition-all duration-300">
                 <img src="<?php echo $pec_cursos_2_image; ?>" alt="" class="cursos__curso--img">
                 <div class="cursos__curso--content-wrapper">
-                    <div class="cursos__curso--title text-left text-4xl mb-6 mt-3 font-semibold text-pec-bluelight">
-                        <?php echo wp_trim_words( $pec_cursos_2_title, 6); ?>
+                    <div class="cursos__curso--title text-left text-3xl mb-6 mt-3 font-semibold text-pec-bluelight">
+                        <?php echo wp_trim_words( $pec_cursos_2_title, 12); ?>
                     </div>
                     <div class="border-b-2 border-pec-bluelight w-full mx-auto my-6"></div>
-                    <div class="cursos__curso--content text-left text-3xl mb-8 transition-all font-semibold duration-300 text-white">
+                    <div class="cursos__curso--content text-left text-3xl mb-6 transition-all font-semibold duration-300 text-white">
                         <?php echo wp_trim_words( $pec_cursos_2_content, 12); ?>
                     </div>
                     <div class="text-red text-white text-lg">
@@ -121,11 +121,11 @@ if ( ! $title || empty( $title ) ) {
             <a href="<?php echo $pec_cursos_3_link ?>" class="cursos__curso--link relative w-full h-full transition-all duration-300">
                 <img src="<?php echo $pec_cursos_3_image; ?>" alt="" class="cursos__curso--img">
                 <div class="cursos__curso--content-wrapper">
-                    <div class="cursos__curso--title text-left text-4xl mb-6 mt-3 font-semibold text-pec-bluelight">
-                        <?php echo wp_trim_words( $pec_cursos_3_title, 6); ?>
+                    <div class="cursos__curso--title text-left text-3xl mb-6 mt-3 font-semibold text-pec-bluelight">
+                        <?php echo wp_trim_words( $pec_cursos_3_title, 12); ?>
                     </div>
                     <div class="border-b-2 border-pec-bluelight w-full mx-auto my-6"></div>
-                    <div class="cursos__curso--content text-left text-3xl mb-8 transition-all font-semibold duration-300 text-white">
+                    <div class="cursos__curso--content text-left text-3xl mb-6 transition-all font-semibold duration-300 text-white">
                         <?php echo wp_trim_words( $pec_cursos_3_content, 12); ?>
                     </div>
                     <div class="text-red text-white text-lg">
