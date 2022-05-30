@@ -89,7 +89,7 @@
                     <div class="depoimentos__inner-wrapper text-white">
                         <div class="depoimentos__content text-center text-3xl leading-loose">
                             O curso foi na medida, muito bom para quem quer seguir
-                            carreira na área, o instrutor é muito com, a didática 
+                            carreira na área, o instrutor é muito com a didática 
                             é fácil de entender e faz as pessoas interagirem o que é importante.
                         </div>
                         <div class="depoimentos__title text-4xl mt-20 font-poppins text-center font-bold">VALDECIR</div>
@@ -101,7 +101,7 @@
                     <div class="depoimentos__foto--border"></div>
                     <div class="depoimentos__inner-wrapper text-white">
                         <div class="depoimentos__content text-center text-3xl leading-loose">
-                            Curso top demais, instrutir nota 10, explicação bem detalhada.
+                            Curso top demais, instrutor nota 10, explicação bem detalhada.
                         </div>
                         <div class="depoimentos__title text-4xl mt-20 font-poppins text-center font-bold">Fernando </div>
                         <div class="depoimentos__subtitle text-3xl mt-6 text-pec-bluelight text-center">MERCADO DO ÓLEO</div>
