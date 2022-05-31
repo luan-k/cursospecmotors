@@ -89,7 +89,7 @@
                     <div class="depoimentos__inner-wrapper text-white">
                         <div class="depoimentos__content text-center text-3xl leading-loose">
                             O curso foi na medida, muito bom para quem quer seguir
-                            carreira na área, o instrutor é muito com a didática 
+                            carreira na área, o instrutor é muito bom com a didática 
                             é fácil de entender e faz as pessoas interagirem o que é importante.
                         </div>
                         <div class="depoimentos__title text-4xl mt-20 font-poppins text-center font-bold">VALDECIR</div>
