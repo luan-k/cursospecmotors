@@ -5,74 +5,71 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 let mode = "development";
 /* let target = "web"; */
-const plugins = [
-  new CleanWebpackPlugin(),
-  new MiniCssExtractPlugin(),
-];
+const plugins = [new CleanWebpackPlugin(), new MiniCssExtractPlugin()];
 
 if (process.env.NODE_ENV === "production") {
-  mode = "production";
-  /*   target = "browserslist"; */
+	mode = "production";
+	/*   target = "browserslist"; */
 }
 
 const config = {
-  mode: mode,
-  /* target: target, */
+	mode: mode,
+	/* target: target, */
 
-  entry: {
-    main: "./scripts/index.js",
-  },
+	entry: {
+		main: "./scripts/index.js",
+	},
 
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    assetModuleFilename: "images/[hash][ext][query]",
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        type: "asset",
-      },
-      {
-        test: /\.(s[ac]|c)ss$/i,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: { publicPath: "" },
-          },
+	output: {
+		path: path.resolve(__dirname, "dist"),
+		assetModuleFilename: "images/[hash][ext][query]",
+	},
+	module: {
+		rules: [
+			{
+				test: /\.(png|jpe?g|gif|svg)$/i,
+				type: "asset",
+			},
+			{
+				test: /\.(s[ac]|c)ss$/i,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: { publicPath: "" },
+					},
 
-          "css-loader",
-          "postcss-loader",
-          "sass-loader",
-        ],
-      },
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
-      },
-    ],
-  },
+					"css-loader",
+					"postcss-loader",
+					"sass-loader",
+				],
+			},
+			{
+				test: /\.jsx?$/,
+				exclude: /node_modules/,
+				use: {
+					loader: "babel-loader",
+				},
+			},
+		],
+	},
 
-  plugins: plugins,
+	plugins: plugins,
 
-  resolve: {
-    extensions: [".js", ".jsx"],
-  },
+	resolve: {
+		extensions: [".js", ".jsx"],
+	},
 
-  devtool: "source-map",
+	devtool: "source-map",
 };
 
 // Fire up a local server if requested
 if (process.env.SERVER) {
-  config.plugins.push(
-    new BrowserSyncPlugin({
-      proxy: "pec-cursos.local",
-      files: ["**/*.php", "**/*.css", "**/*.scss"],
-      notify: false,
-    })
-  );
+	config.plugins.push(
+		new BrowserSyncPlugin({
+			proxy: "localhost:10005",
+			files: ["**/*.php", "**/*.css", "**/*.scss"],
+			notify: false,
+		})
+	);
 }
 module.exports = config;

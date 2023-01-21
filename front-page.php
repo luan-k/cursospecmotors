@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <!-- slider -->
-    <section class="slider-custom" data-anime="top">
+    <section class="slider-custom" id="slider-custom" data-anime="top">
         <?php echo do_shortcode('[ssslider id="5"]') ?>
     </section>
 
@@ -77,7 +77,7 @@
             nossos cursos
         </h3>
         <div data-anime="right" class="border-b-4 border-pec-bluelight w-1/12 mx-auto mt-16 mb-80"></div>
-        
+
         <div class="depoimentos__wrapper relative slider slider_depoimentos pb-12">
             <input id="radio-depoimentos" type="radio" name="slider-depoimentos" title="slide1" checked="checked" class="slider__nav radio-depoimentos" data-anime="left" />
             <input id="radio-depoimentos-1" type="radio" name="slider-depoimentos" title="slide2" class="slider__nav radio-depoimentos" data-anime="bottom" />
@@ -89,7 +89,7 @@
                     <div class="depoimentos__inner-wrapper text-white">
                         <div class="depoimentos__content text-center text-3xl leading-loose">
                             O curso foi na medida, muito bom para quem quer seguir
-                            carreira na área, o instrutor é muito bom com a didática 
+                            carreira na área, o instrutor é muito bom com a didática
                             é fácil de entender e faz as pessoas interagirem o que é importante.
                         </div>
                         <div class="depoimentos__title text-4xl mt-20 font-poppins text-center font-bold">VALDECIR</div>

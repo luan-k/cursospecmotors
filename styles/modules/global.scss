@@ -29,44 +29,44 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 /* ======================================== */
 /* ================scroolbar=================== */
 /* ======================================== */
 /* width */
 ::-webkit-scrollbar {
-  width: 0.7vw;
+	width: 0.7vw;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 2px;
+	background: transparent;
+	border-radius: 2px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--pec-blue-light);
-  border-radius: 2px;
-  transition: background-color 0.8s;
+	background: var(--pec-blue-light);
+	border-radius: 2px;
+	transition: background-color 0.8s;
 }
 ::-webkit-scrollbar-corner {
-  border-radius: 2px;
+	border-radius: 2px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  --tw-bg-opacity: 1;
-  background-color: var(--pec-blue-dark);
+	--tw-bg-opacity: 1;
+	background-color: var(--pec-blue-dark);
 }
 /* ======================================== */
 /* ================scroolbar=================== */
 /* ======================================== */
 html {
-  /* this defines what one rem is */
-  font-size: 62.5%;
+	/* this defines what one rem is */
+	font-size: 62.5%;
 }
 
 /* a:hover {
@@ -75,14 +75,38 @@ html {
   } */
 
 body {
-  box-sizing: border-box; /* Padding and Margin are no longer part of the width and height of the element */
-  overflow-x: hidden;
-  min-height: 100vh;
-  background-color: #08061c;
+	box-sizing: border-box; /* Padding and Margin are no longer part of the width and height of the element */
+	overflow-x: hidden;
+	min-height: 100vh;
+	background-color: #08061c;
 }
 nav {
-  font-family: "poppins";
+	font-family: "poppins";
 }
-.wraper{
-  overflow-x: hidden;
+.wraper {
+	overflow-x: hidden;
+}
+
+//script on plugin
+#viewerContainer {
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+}
+#viewerContainer .textLayer {
+	user-select: none !important;
+}
+#viewerContainer * {
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+	cursor: default;
+}
+#documentPropertiesOverlay {
+	display: none !important;
+}
+#documentProperties {
+	display: none !important;
 }

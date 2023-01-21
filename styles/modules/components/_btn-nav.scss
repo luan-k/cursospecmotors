@@ -51,106 +51,107 @@
   top: 0;
 } */
 
-
 a {
-  display: inline-block;
-  padding: 5px;
-  position: relative;
-  color: #84c2ff;
-  text-decoration: none;
+	display: inline-block;
+	padding: 5px;
+	position: relative;
+	color: #84c2ff;
+	text-decoration: none;
 }
 a.transparent {
-  background-size: 100% 200%;
+	background-size: 100% 200%;
 }
 a.underline-left-right::before,
 a.underline-up-and-out::before,
 a.underline-up-down::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 5px;  /* 100% will cover entire background of text */
-  border-radius: 4px;
-  background-color: #84c2ff;
-  bottom: 0;
-  left: 0;  
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px; /* 100% will cover entire background of text */
+	border-radius: 4px;
+	background-color: #84c2ff;
+	bottom: 0;
+	left: 0;
 }
 
 a.underline-left-right {
-  position: relative;
+	position: relative;
 }
 a.underline-left-right::before {
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.3s ease-in-out;
 }
 a.underline-left-right:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
+	transform-origin: left;
+	transform: scaleX(1);
 }
 
 a.underline-up-and-out {
-  position: relative;
+	position: relative;
 }
 a.underline-up-and-out::before {
-  transform-origin: top;
-  transform: scaleY(0);
-  transition: transform .5s ease-in-out;
+	transform-origin: top;
+	transform: scaleY(0);
+	transition: transform 0.5s ease-in-out;
 }
 a.underline-up-and-out:hover::before {
-  transform-origin: bottom;
-  transform: scaleY(1);
+	transform-origin: bottom;
+	transform: scaleY(1);
 }
 
 a.underline-up-down {
-  position: relative;
+	position: relative;
 }
 a.underline-up-down::before {
-  transform-origin: bottom;
-  transform: scaleY(0);
-  transition: transform .5s ease-in-out;
+	transform-origin: bottom;
+	transform: scaleY(0);
+	transition: transform 0.5s ease-in-out;
 }
 a.underline-up-down:hover::before {
-  transform-origin: bottom;
-  transform: scaleY(1);
+	transform-origin: bottom;
+	transform: scaleY(1);
 }
 
 /* ===================== */
 
 .btn-nav::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 5px;  /* 100% will cover entire background of text */
-  border-radius: 4px;
-  background-color: var(--pec-blue-dark);
-  bottom: 0;
-  left: 0;  
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px; /* 100% will cover entire background of text */
+	border-radius: 4px;
+	background-color: var(--pec-blue-dark);
+	bottom: 0;
+	left: 0;
 }
 
 .btn-nav {
-  position: relative;
-  font-size: 1.3rem;
-  white-space: nowrap;
+	position: relative;
+	font-size: 1.3rem;
+	white-space: nowrap;
+	padding-left: 0;
+	padding-right: 0;
 }
 .btn-nav::before {
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.3s ease-in-out;
 }
 .btn-nav:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
+	transform-origin: left;
+	transform: scaleX(1);
 }
 
-@media (max-width:1350px) {
-  .btn-nav {
-    font-size: 1rem;
-  }
+@media (max-width: 1350px) {
+	.btn-nav {
+		font-size: 1rem;
+	}
 }
-@media (max-width:1100px) {
-  .btn-nav {
-    a{
-      @apply px-0
-    }
-  }
-}
+/* @media (max-width: 1100px) {
+	.btn-nav {
+		a {
+			@apply px-0;
+		}
+	}
+} */

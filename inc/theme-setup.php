@@ -173,3 +173,60 @@ if ( function_exists( 'acf_register_block_type' ) ) {
 		}
 	);
 }
+// Our custom post type function
+function create_posttype() {
+
+    register_post_type( 'material-didatico',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Materiais Didáticos' ),
+                'singular_name' => __( 'Material Didático' )
+            ),
+            'public'              => true,
+			'menu_icon'           => 'dashicons-media-document',
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'material-didatico'),
+            'show_in_rest'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail',  'revisions', 'custom-fields', ),
+
+        )
+    );
+	register_post_type( 'apostila',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Apostilas' ),
+                'singular_name' => __( 'Apostila' )
+            ),
+            'public'               => true,
+			'menu_icon'            => 'dashicons-media-document',
+            'has_archive'          => false,
+            'rewrite'              => array('slug' => 'apostila'),
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_rest'        => false,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'can_export'          => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields', ),
+
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );

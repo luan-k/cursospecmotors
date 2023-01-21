@@ -1,64 +1,64 @@
-import $ from "Jquery";
+import $ from "jquery";
 
 class Search {
-  /* 1. describe and create/initiate our object */
-  constructor() {
-    this.addSearchHtml();
-    this.resultsDiv = $("#search-overlay__results");
-    this.openButton = $(".js-search-trigger");
-    this.closeButton = $(".search-overlay__close");
-    this.searchOverlay = $(".search-overlay");
-    this.searchField = $("#search-term");
-    this.searchBottom = $("#search-results-bottom");
-    this.events();
-    this.isSpinnerVisible = false;
-    this.previousValue;
-    this.typingTimer;
-  }
-  /*  2. events */
-  events() {
-    this.openButton.on("click", this.openOverlay.bind(this));
-    this.closeButton.on("click", this.closeOverlay.bind(this));
-    /* $(document).on("keyup", this.keyPressDispatcher.bind(this)); */
-    this.searchField.on("keyup", this.TypingLogic.bind(this));
-  }
-  /* 3. methods */
-  TypingLogic() {
-    if (this.searchField.val() != this.previousValue) {
-      clearTimeout(this.typingTimer);
-      if (this.searchField.val()) {
-        if (!this.isSpinnerVisible) {
-          this.searchOverlay.addClass("active-bottom ");
-          this.resultsDiv.html('<div class="spinner-loader"></div>');
-          this.isSpinnerVisible = true;
-        }
-        this.typingTimer = setTimeout(this.getResults.bind(this), 750);
-      } else {
-        this.resultsDiv.html("");
-        this.isSpinnerVisible = false;
-      }
-    }
-    this.previousValue = this.searchField.val();
-  }
+	/* 1. describe and create/initiate our object */
+	constructor() {
+		this.addSearchHtml();
+		this.resultsDiv = $("#search-overlay__results");
+		this.openButton = $(".js-search-trigger");
+		this.closeButton = $(".search-overlay__close");
+		this.searchOverlay = $(".search-overlay");
+		this.searchField = $("#search-term");
+		this.searchBottom = $("#search-results-bottom");
+		this.events();
+		this.isSpinnerVisible = false;
+		this.previousValue;
+		this.typingTimer;
+	}
+	/*  2. events */
+	events() {
+		this.openButton.on("click", this.openOverlay.bind(this));
+		this.closeButton.on("click", this.closeOverlay.bind(this));
+		/* $(document).on("keyup", this.keyPressDispatcher.bind(this)); */
+		this.searchField.on("keyup", this.TypingLogic.bind(this));
+	}
+	/* 3. methods */
+	TypingLogic() {
+		if (this.searchField.val() != this.previousValue) {
+			clearTimeout(this.typingTimer);
+			if (this.searchField.val()) {
+				if (!this.isSpinnerVisible) {
+					this.searchOverlay.addClass("active-bottom ");
+					this.resultsDiv.html('<div class="spinner-loader"></div>');
+					this.isSpinnerVisible = true;
+				}
+				this.typingTimer = setTimeout(this.getResults.bind(this), 750);
+			} else {
+				this.resultsDiv.html("");
+				this.isSpinnerVisible = false;
+			}
+		}
+		this.previousValue = this.searchField.val();
+	}
 
-  getResults() {
-    $.getJSON(
-      WKodeData.root_url +
-        "/wp-json/wk/v1/search?term=" +
-        this.searchField.val(),
-      (results) => {
-        this.resultsDiv.html(`
+	getResults() {
+		$.getJSON(
+			WKodeData.root_url +
+				"/wp-json/wk/v1/search?term=" +
+				this.searchField.val(),
+			(results) => {
+				this.resultsDiv.html(`
       <div class="" >
-        
+
           ${
-            results.postsArray.length
-              ? '<div class="row"> <h3 class="title-3 mt-5 mb-3 text-white"> Produtos </h3> <hr class="white">'
-              : '<h3 class="title-4 text-white mt-5 mb-3 text-center">nenhum produto corresponde a sua pesquisa</h3>'
-          }
+						results.postsArray.length
+							? '<div class="row"> <h3 class="title-3 mt-5 mb-3 text-white"> Produtos </h3> <hr class="white">'
+							: '<h3 class="title-4 text-white mt-5 mb-3 text-center">nenhum produto corresponde a sua pesquisa</h3>'
+					}
             ${results.postsArray
-              .map(
-                (item) =>
-                  `
+							.map(
+								(item) =>
+									`
                   <a href="${item.permalink}" class="link-search-results grid grid-cols-1">
                       <div class="col-12 search-product-wraper grid grid-cols-1">
                         <div class="row grid grid-cols-1 md:grid-cols-12">
@@ -70,31 +70,31 @@ class Search {
                           <div class="col-12 col-sm-8 col-text-search md:col-span-8">
                               <div class="row grid grid-cols-1 md:grid-cols-12">
                                   <div class="col-12 col-sm-8 title-3 title-search md:col-span-12">${item.title}</div>
-                                  
+
                               </div>
                               <div class="col-12 text-search hidden md:grid grid-cols-1">${item.descricao}</div>
                           </div>
                         </div>
                       </div>
-                  </a>                
+                  </a>
                   `
-              )
-              .join("")}
+							)
+							.join("")}
               <div class='btn-wraper justify-center search my-5 px-9 py-6 rounded-2xl'> <a href="${
-                WKodeData.root_url
-              }/produtos" class='btn-wk text-center px-9 py-6 rounded-2xl bg-white text-dark-primary'> ver todos os Produtos </a> </div> 
+								WKodeData.root_url
+							}/produtos" class='btn-wk text-center px-9 py-6 rounded-2xl bg-white text-dark-primary'> ver todos os Produtos </a> </div>
           ${results.postsArray.length ? "</div>" : ""}
         </div>
         <div class="">
             ${
-              results.servicos.length
-                ? '<div class="row"> <h3 class="title-3 mt-5 mb-3 text-white"> Serviços </h3> <hr class="white">'
-                : '<h3 class="title-4 text-white mt-5 mb-3 justify-center text-center">nenhum serviço corresponde a sua pesquisa</h3>'
-            }
+							results.servicos.length
+								? '<div class="row"> <h3 class="title-3 mt-5 mb-3 text-white"> Serviços </h3> <hr class="white">'
+								: '<h3 class="title-4 text-white mt-5 mb-3 justify-center text-center">nenhum serviço corresponde a sua pesquisa</h3>'
+						}
               ${results.servicos
-                .map(
-                  (item) =>
-                    `
+								.map(
+									(item) =>
+										`
                     <a href="${item.permalink}" class="link-search-results servico grid grid-cols-1">
                         <div class="col-12 search-product-wraper grid grid-cols-1">
                           <div class="row grid grid-cols-1 md:grid-cols-12">
@@ -106,7 +106,7 @@ class Search {
                             <div class="col-12 col-sm-8 col-text-search md:col-span-8">
                                 <div class="row">
                                     <div class="col-12 title-3 title-search grid grid-cols-1">${item.title}</div>
-                                    
+
                                 </div>
                                 <div class="col-12 text-search grid-cols-1 hidden md:grid">${item.descricao}</div>
                             </div>
@@ -114,23 +114,23 @@ class Search {
                         </div>
                     </a>
                     `
-                )
-                .join("")}
+								)
+								.join("")}
                 <div class='btn-wraper justify-center search my-5 px-9 py-6 rounded-2xl'> <a href="${
-                  WKodeData.root_url
-                }/servicos" class='btn-wk text-center text-white px-9 py-6 rounded-2xl bg-dark-primary'> ver todos os serviços </a> </div> 
+									WKodeData.root_url
+								}/servicos" class='btn-wk text-center text-white px-9 py-6 rounded-2xl bg-dark-primary'> ver todos os serviços </a> </div>
             ${results.servicos.length ? "</div>" : ""}
         </div>
-        
+
       </div>
       `);
-        this.isSpinnerVisible = false;
-      }
-    ); /* asynchronous */
-    /* =========================================================== */
-    /* =================old code, might be useful================== */
-    /* =========================================================== */
-    /* $.when(
+				this.isSpinnerVisible = false;
+			}
+		); /* asynchronous */
+		/* =========================================================== */
+		/* =================old code, might be useful================== */
+		/* =========================================================== */
+		/* $.when(
       $.getJSON(
         universityData.root_url +
           "/wp-json/wp/v2/posts?search=" +
@@ -160,7 +160,7 @@ class Search {
               )
               .join("")}
           ${combinedResults.length ? "</ul>" : ""}
-  
+
         `);
         this.isSpinnerVisible = false;
       },
@@ -169,11 +169,11 @@ class Search {
       }
     ); */
 
-    /* this.resultsDiv.html("niggas");
+		/* this.resultsDiv.html("niggas");
     this.isSpinnerVisible = false; */
-  }
+	}
 
-  /* keyPressDispatcher(e) {
+	/* keyPressDispatcher(e) {
     if (e.keyCode == 83 && $("input, textarea").is(":focus")) {
       this.openOverlay();
     }
@@ -181,22 +181,22 @@ class Search {
       this.closeOverlay();
     }
   } */
-  openOverlay() {
-    this.searchOverlay.addClass("search-overlay--active");
-    /* $("body").addClass("body-no-scroll"); */
-    this.searchField.val("");
-    setTimeout(() => this.searchField.focus(), 301);
-    return false;
-  }
+	openOverlay() {
+		this.searchOverlay.addClass("search-overlay--active");
+		/* $("body").addClass("body-no-scroll"); */
+		this.searchField.val("");
+		setTimeout(() => this.searchField.focus(), 301);
+		return false;
+	}
 
-  closeOverlay() {
-    this.searchOverlay.removeClass("search-overlay--active");
-    this.searchOverlay.removeClass("active-bottom ");
-    /* $("body").removeClass("body-no-scroll"); */
-  }
+	closeOverlay() {
+		this.searchOverlay.removeClass("search-overlay--active");
+		this.searchOverlay.removeClass("active-bottom ");
+		/* $("body").removeClass("body-no-scroll"); */
+	}
 
-  addSearchHtml() {
-    $("#navbarNavAltMarkup").append(`
+	addSearchHtml() {
+		$("#navbarNavAltMarkup").append(`
     <div class="search-overlay">
       <div class="search-overlay__top px-6">
         <div class="">
@@ -210,7 +210,7 @@ class Search {
       </div>
     </div>
     `);
-  }
+	}
 }
 
 export default Search;
