@@ -12,7 +12,7 @@
             <nav>
                 <div class="relative grid grid-cols-2 md:grid-cols-6 container header-inside max-w-full text-3xl  space-x-12 font-medium menu-mob" id="navbarNavAltMarkup">
                      <!-- logo -->
-                    <div class="logo-wrape inline w-64 m-auto py-5">
+                    <div class="logo-wraper inline w-64 m-auto py-5">
                         <a class="" href="<?php echo esc_url(site_url()); ?>">
                             <img class="logo w-full" src="<?php echo get_theme_file_uri('/images/logo-light.svg')?>" alt="">
                         </a>

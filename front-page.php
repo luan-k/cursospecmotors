@@ -6,8 +6,10 @@
     </section>
 
     <!-- cursos -->
-    <section class="cursos container text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/bg-instrutores.jpg')?>)">
-       <?php the_content(); ?>
+    <section class="cursos text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/bg-instrutores.jpg')?>)">
+		<div class="container">
+    	   <?php the_content(); ?>
+		</div>
     </section>
 
     <!-- marcas -->
@@ -32,11 +34,6 @@
                         class="composition__photo composition__photo--p3"
                         src="<?php echo get_theme_file_uri('./images/quem-somos-3-large.jpg')?>">
 
-                                <!--
-                                <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                                <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                                <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                                -->
                 </div>
             </div>
             <div class="space-y-9 text-pec-graymid">
@@ -78,7 +75,7 @@
         </h3>
         <div data-anime="right" class="border-b-4 border-pec-bluelight w-1/12 mx-auto mt-16 mb-80"></div>
 
-        <div class="depoimentos__wrapper relative slider slider_depoimentos pb-12">
+        <div class="depoimentos__wrapper relative slider slider_depoimentos pb-12" style="background-image: url(<?php echo get_theme_file_uri('./images/depoimentos.jpg') ?>)">
             <input id="radio-depoimentos" type="radio" name="slider-depoimentos" title="slide1" checked="checked" class="slider__nav radio-depoimentos" data-anime="left" />
             <input id="radio-depoimentos-1" type="radio" name="slider-depoimentos" title="slide2" class="slider__nav radio-depoimentos" data-anime="bottom" />
             <input id="radio-depoimentos-2" type="radio" name="slider-depoimentos" title="slide3" class="slider__nav radio-depoimentos" data-anime="right" />

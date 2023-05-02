@@ -144,7 +144,7 @@ if ( function_exists( 'acf_register_block_type' ) ) {
 					array(
 						array(
 							'slug'  => 'pec-cursos',
-							'title' => __( 'Pec Cursos', 'artsoft_portal' ),
+							'title' => __( 'Pec Cursos', 'pec-cursos' ),
 						),
 					),
 					$categories
@@ -157,8 +157,46 @@ if ( function_exists( 'acf_register_block_type' ) ) {
 					'title'           => __( 'Pec Nossos Cursos' ),
 					'description'     => __( 'Um block para selecionar nossos cursos' ),
 					'render_template' => 'template-parts/blocks/nossos-cursos.php',
-					'category'        => 'Pec Cursos',
+					'category'        => 'pec-cursos',
 					'icon'            => 'format-status',
+					'keywords'        => array( 'Pec', 'Motors', 'Nossos', 'Cursos' ),
+					'example'         => array(
+						'attributes' => array(
+							'mode' => 'preview',
+							/* 'data' => array(
+								'preview' => WL_URL . '/template-parts/blocks/preview/post.png',
+							), */
+						),
+					),
+				)
+			);
+			acf_register_block_type(
+				array(
+					'name'            => 'know-more-btn',
+					'title'           => __( 'Botão Saber Mais' ),
+					'description'     => __( 'Um block botao' ),
+					'render_template' => 'template-parts/blocks/know-more-btn.php',
+					'category'        => 'pec-cursos',
+					'icon'            => 'button',
+					'keywords'        => array( 'Pec', 'Motors', 'Nossos', 'Cursos' ),
+					'example'         => array(
+						'attributes' => array(
+							'mode' => 'preview',
+							/* 'data' => array(
+								'preview' => WL_URL . '/template-parts/blocks/preview/post.png',
+							), */
+						),
+					),
+				)
+			);
+			acf_register_block_type(
+				array(
+					'name'            => 'whatsapp-btn',
+					'title'           => __( 'Botão Whatsapp' ),
+					'description'     => __( 'Um block botao para whatsapp' ),
+					'render_template' => 'template-parts/blocks/whatsapp-btn.php',
+					'category'        => 'pec-cursos',
+					'icon'            => 'button',
 					'keywords'        => array( 'Pec', 'Motors', 'Nossos', 'Cursos' ),
 					'example'         => array(
 						'attributes' => array(
@@ -187,7 +225,7 @@ function create_posttype() {
 			'menu_icon'           => 'dashicons-media-document',
             'has_archive'         => true,
             'rewrite'             => array('slug' => 'material-didatico'),
-            'show_in_rest'        => false,
+            'show_in_rest'        => true,
 			'public'              => true,
 			'show_ui'             => true,
 			'show_in_menu'        => true,
@@ -215,7 +253,7 @@ function create_posttype() {
             'rewrite'              => array('slug' => 'apostila'),
 			'public'              => true,
 			'show_ui'             => true,
-			'show_in_rest'        => false,
+			'show_in_rest'        => true,
 			'show_in_menu'        => true,
 			'show_in_nav_menus'   => true,
 			'show_in_admin_bar'   => true,
@@ -223,10 +261,75 @@ function create_posttype() {
 			'exclude_from_search' => false,
 			'publicly_queryable'  => true,
 			'capability_type'     => 'post',
-			'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields', ),
+			'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields' ),
+
+        )
+    );
+	register_post_type( 'cursos_presenciais',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Cursos Presenciais' ),
+                'singular_name' => __( 'Curso Presencial' )
+            ),
+            'public'               => true,
+			'menu_icon'            => 'dashicons-media-text',
+            'has_archive'          => false,
+            'rewrite'              => array('slug' => 'cursos-presenciais'),
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_rest'        => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'can_export'          => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields' ),
 
         )
     );
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
+
+function custom_taxonomy() {
+    $labels = array(
+        'name' => __( 'Localização', 'text-domain' ),
+        'singular_name' => __( 'Localização', 'text-domain' ),
+        'menu_name' => __( 'Localização', 'text-domain' ),
+        'all_items' => __( 'Todos os Items', 'text-domain' ),
+        'parent_item' => __( 'Items Parentes', 'text-domain' ),
+        'parent_item_colon' => __( 'Item Parente:', 'text-domain' ),
+        'new_item_name' => __( 'Novo Item Nome', 'text-domain' ),
+        'add_new_item' => __( 'Adicionar Novo Item', 'text-domain' ),
+        'edit_item' => __( 'Editar Item', 'text-domain' ),
+        'update_item' => __( 'Update Item', 'text-domain' ),
+        'view_item' => __( 'Ver Item', 'text-domain' ),
+        'separate_items_with_commas' => __( 'Separe Com Virgulas', 'text-domain' ),
+        'add_or_remove_items' => __( 'Add ou Remova Itens', 'text-domain' ),
+        'choose_from_most_used' => __( 'Escolher dos mais usados', 'text-domain' ),
+        'popular_items' => __( 'Itens Populares', 'text-domain' ),
+        'search_items' => __( 'Procurar Itens', 'text-domain' ),
+        'not_found' => __( 'Não Encontrado', 'text-domain' ),
+        'no_terms' => __( 'Nenhum Item', 'text-domain' ),
+        'items_list' => __( 'Lista de Itens', 'text-domain' ),
+        'items_list_navigation' => __( 'Items list navigation', 'text-domain' ),
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true,
+        'public' => true,
+        'show_ui' => true,
+		'show_in_rest' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'local' ),
+    );
+
+    register_taxonomy( 'local', array( 'post' ), $args );
+}
+add_action( 'init', 'custom_taxonomy' );
+

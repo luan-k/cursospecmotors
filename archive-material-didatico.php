@@ -1,10 +1,10 @@
 <?php
-get_header();
 
 if ( is_user_logged_in() ) {
+	get_header();
 		?>
 			<div class="page-wraper">
-				<section class="single-featured-image" style="background-image:url( <?php if(has_post_thumbnail()){ the_post_thumbnail_url('full'); } else { echo get_theme_file_uri('/img/standart-banner.png'); }  ?>)" alt="" >
+				<section class="single-featured-image" style="background-image:url( <?php if(has_post_thumbnail(329)){ echo wp_get_attachment_url( get_post_thumbnail_id(329) ); } else { echo get_theme_file_uri('/images/standard.png'); }  ?>)" alt="" >
 					<div class="container">
 						<h1 class="title title-page"><?php post_type_archive_title() ?></h1>
 					</div>
@@ -31,10 +31,12 @@ if ( is_user_logged_in() ) {
 									$users 	  	  = get_field('users');
 									$current_user = wp_get_current_user();
 									$is_authorized_user = false;
-									foreach($users as $user){
-										if($user['ID'] == $current_user->ID || $current_user->caps['administrator'] ){
-											$is_authorized_user = true;
-										}else{
+									if($users){
+										foreach($users as $user){
+											if($user['ID'] == $current_user->ID || $current_user->caps['administrator'] ){
+												$is_authorized_user = true;
+											}else{
+											}
 										}
 									}
 
@@ -46,7 +48,7 @@ if ( is_user_logged_in() ) {
 											<a href="<?php the_permalink(); ?>" class="cursos__curso--link relative w-full h-full transition-all duration-300">
 												<img src="<?php if(has_post_thumbnail()){ the_post_thumbnail_url('full'); } else { echo get_theme_file_uri('/images/standard.png'); }  ?>" alt="" class="cursos__curso--img">
 												<div class="cursos__curso--content-wrapper">
-													<div class="cursos__curso--title text-left text-3xl mb-6 mt-3 font-semibold text-white transition-all duration-300 hover:text-pec-bluelight">
+													<div class="cursos__curso--title text-left mb-6 mt-3 font-semibold text-white transition-all duration-300 hover:text-pec-bluelight">
 														<?php echo wp_trim_words( the_title() , 15); ?>
 													</div>
 													<div class="border-b-2 border-pec-bluelight w-full mx-auto my-6"></div>
@@ -72,7 +74,7 @@ if ( is_user_logged_in() ) {
 <?php } else {
 
 	wp_redirect( home_url( '/wp-login.php' ) );
-	exit;
+	exit();
 
 
 }

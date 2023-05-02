@@ -1,0 +1,22 @@
+.overlay-container {
+	div.overlay {
+		width: 100% !important;
+		height: 100% !important;
+		background-color: transparent !important;
+		padding: 0 !important;
+		& > div {
+			width: 100% !important;
+			height: 100% !important;
+			background-color: transparent !important;
+			padding: 0 !important;
+			.buttons {
+				height: 100%;
+				button {
+					padding: 0 !important;
+					width: 100% !important;
+					color: transparent !important;
+				}
+			}
+		}
+	}
+}

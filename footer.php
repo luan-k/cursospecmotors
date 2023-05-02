@@ -1,7 +1,7 @@
 
-            
+
             <footer class="page-footer bg-pec-graymid text-white font-poppins font-semibold pb-20" style="background-image: url(<?php echo get_theme_file_uri('./images/footer.jpg') ?>) ">
-                
+
                 <!-- Footer Links -->
                 <div class="container text-center md:text-left text-lg font-semibold">
 
@@ -15,7 +15,7 @@
                                 <i class="fas fa-phone-alt"></i> (41) 3156-7257
                             </p>
                             <p class="footer-text">
-                                <i class="fab fa-whatsapp"></i> (41) 99524-0664
+                                <i class="fab fa-whatsapp"></i> (41) 99681-0097
                             </p>
                             <a class="footer-text" href="<?php echo esc_url(site_url('/contato')); ?>">
                                 <i class="far fa-envelope"></i> Enviar uma mensagem
@@ -25,10 +25,13 @@
                                 Onde Estamos:
                             </h4>
                             <p class="footer-text">
-                                <i class="fas fa-map-marker-alt"></i> RUA CONSELHEIRO LAURINDO, 2935 PRADO VELHO - CURITIBA
+                                <i class="fas fa-map-marker-alt"></i> Rua Conselheiro Laurindo 2935, Prado Velho - Curitiba - Paraná - CEP 80215-232
+                            </p>
+                            <p class="footer-text">
+                                <i class="fas fa-map-marker-alt"></i> Rua Fernandes Cardoso da Silva 671, Serraria - São José - Santa Catarina - CEP 88113-125
                             </p>
                         </div>
-                       
+
                         <div class="col-12 col-sm-4" data-anime="bottom">
                             <h4 class="title-3 text-4xl font-poppins font-bold mb-6">
                                 A Empresa
@@ -50,12 +53,12 @@
                             </div>
                             <div class="footer-text">
                                 <a class="footer-text" href="<?php echo esc_url(site_url('/instrutores')); ?>">Instrutores</a>
-                            </div>  
+                            </div>
                             <div class="footer-text">
                                 <a class="footer-text" href="<?php echo esc_url(site_url('/contato')); ?>">Contato</a>
-                            </div>  
+                            </div>
                             <hr class="white">
-                            
+
                         </div>
                         <div class="col-12 col-sm-4" data-anime="right">
                             <h4 class="title-3 text-4xl font-poppins font-bold mb-6">
@@ -75,19 +78,19 @@
                                         <?php the_title() ?>
                                     </a>
                                 </div>
-                                
+
                             <?php } wp_reset_postdata(); ?>
                             <hr class="white">
                         </div>
 
                     </div>
-                       
 
 
-            
+
+
             </footer>
             <!-- Footer -->
-            
+
             <?php wp_footer() ?>
 
         </div>

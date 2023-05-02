@@ -2,9 +2,8 @@
 $users 	  	  = get_field('users');
 $post_pdf 	  = get_field('pdf_post');
 
-get_header();
-
 if ( is_user_logged_in() ) {
+	get_header();
 	$current_user = wp_get_current_user();
 	$is_authorized_user = false;
 	foreach($users as $user){
@@ -40,7 +39,7 @@ if ( is_user_logged_in() ) {
 									<a href="<?php echo get_permalink($post_id); ?>" class="cursos__curso--link relative w-full h-full transition-all duration-300">
 										<img src="<?php if(get_the_post_thumbnail_url($post_id , 'post-thumbnail')){ echo get_the_post_thumbnail_url($post_id , 'post-thumbnail'); } else { echo get_theme_file_uri('/images/standard.png'); }  ?>" alt="" class="cursos__curso--img">
 										<div class="cursos__curso--content-wrapper">
-											<div class="cursos__curso--title text-left text-3xl mb-6 mt-3 font-semibold text-white transition-all duration-300 hover:text-pec-bluelight">
+											<div class="cursos__curso--title text-left mb-6 mt-3 font-semibold text-white transition-all duration-300 hover:text-pec-bluelight">
 												<?php echo wp_trim_words( get_the_title($post_id), 15); ?>
 											</div>
 											<div class="border-b-2 border-pec-bluelight w-full mx-auto my-6"></div>

@@ -14,9 +14,10 @@
 // then we check if the current user is authorized.
 $single_pdf   = get_field('apostila_pdf');
 
-get_header();
+
 
  if ( is_user_logged_in() ) {
+	get_header();
 		// (1)
 		$current_post_id = get_the_ID();
 
