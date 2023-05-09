@@ -6,49 +6,28 @@
             <div class="col-sm-6 font-poppins">
                 <h3 class="font-poppins" data-anime="top">Telefone:</h3>
                 <ul class="font-poppins" data-anime="left">
-                    <li> (41) 99524-0664 </li>
+                    <li> (41) 99681-0097 </li>
                     <li> (41) 3156-7257 </li>
                 </ul>
 
                 <h3 class="mt-6 font-poppins" data-anime="left">Localização:</h3>
-                <ul class="font-poppins" data-anime="bottom">
-                    <li class="font-poppins">
-                        RUA CONSELHEIRO LAURINDO, 2935 PRADO VELHO - CURITIBA
+                <ul class="font-poppins pr-3" data-anime="bottom">
+                    <li class="font-poppins mt-12">
+                        Rua Conselheiro Laurindo 2935, Prado Velho - Curitiba - Paraná - CEP 80215-232
+                    </li>
+                    <li class="font-poppins mt-12">
+                        Rua Fernandes Cardoso da Silva 671, Serraria - São José - Santa Catarina - CEP 88113-125
                     </li>
                 </ul>
             </div>
             <div class="col-sm-6 mt-9 md:mt-0 font-poppins" data-anime="right">
                 <?php echo do_shortcode('[wpforms id="108"]') ?>
-                <!-- <form data-anime="right">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Insira seu email">
-                    </div>
-                    <div class="form-group">
-                        <label for="messageTitle">Título</label>
-                        <input type="text" class="form-control" id="messageTitle"
-                            placeholder="Insira o titulo da mensagem">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea type="textarea" class="form-control" id="message"
-                            placeholder="Insira o titulo da mensagem"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form> -->
+
             </div>
         </div>
     </div>
     <br><br>
-    <!-- <div class="container text-center contato-text">
-        <h3>Nossos Horários: </h3>
-        <ul>
 
-            Segunda a Sexta, das 08h00 às 18h.
-
-        </ul>
-    </div> -->
     <br><br>
 
     <!-- GOOGLE MAPS -->

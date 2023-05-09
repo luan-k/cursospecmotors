@@ -32,7 +32,7 @@ the_post();
                             <div class="instrutores__slide--content md:text-2xl lg:text-3xl 2xl:text-4xl  w-3/5">
                                 <?php echo get_the_content() ?>
                             </div>
-                            <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
+                            <a target="_blank" href="https://web.whatsapp.com/send?phone=5541996810097&text=Olá!%20vim%20do%20Cursos%20Pecmotors.%20Estava%20olhando%20a%20página%20Instrutores.%20Pode%20me%20ajudar%3F" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
                                 Saiba Mais
                             </a>
                         </div>

@@ -74,7 +74,7 @@ module.exports = [
 				filename: "./dist/main.min.css",
 			}),
 			new BrowserSyncPlugin({
-				proxy: "localhost:10005",
+				proxy: "cursos-pec.local",
 				files: ["**/*.php", "**/*.css", "**/*.scss"],
 				notify: false,
 			}),

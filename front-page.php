@@ -6,7 +6,7 @@
     </section>
 
     <!-- cursos -->
-    <section class="cursos text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/bg-instrutores.jpg')?>)">
+    <section class="cursos text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/BackgroundSite.png')?>)">
 		<div class="container">
     	   <?php the_content(); ?>
 		</div>
@@ -46,7 +46,7 @@
                     aprimorar ainda mais a qualificação técnica de nossos clientes.
                 </p>
                 <p class="generic-text text-4xl" data-anime="right">
-                    Já são mais de 300 alunos certificados.
+                    Já são mais de 500 alunos certificados.
                     Nesse anseio de sempre passar informações
                     de alta qualidade a nossos parceiros,
                     criamos o nosso Centro Técnico Pecmotors
