@@ -121,7 +121,7 @@
 
     </section>
 
-    <section class="instrutores pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/bg-instrutores.jpg')?>)">
+    <section class="instrutores pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/BackgroundSite.png')?>)">
         <div class="instrutores__wrapper relative slider slider_instrutores" data-anime="right">
             <input id="radio-instrutores" type="radio" name="slider-instrutores" title="slide1" checked="checked" class="slider__nav radio-instrutores"/>
             <input id="radio-instrutores-1" type="radio" name="slider-instrutores" title="slide2" class="slider__nav radio-instrutores"/>
