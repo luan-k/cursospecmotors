@@ -81,7 +81,7 @@
             <input id="radio-depoimentos-2" type="radio" name="slider-depoimentos" title="slide3" class="slider__nav radio-depoimentos" data-anime="right" />
             <div class="depoimentos__slider-wrapper slider__inner slider__inner_depoimentos" >
                 <div class="depoimentos__slide relative slider__contents" id="slide-1">
-                    <img src="<?php echo get_theme_file_uri('./images/depoimentos-1.jpg') ?>" class="depoimentos__foto" data-anime="bottom" alt="">
+                    <img src="<?php echo get_theme_file_uri('/images/depoimentos-1.jpg') ?>" class="depoimentos__foto" data-anime="bottom" alt="">
                     <div class="depoimentos__foto--border"></div>
                     <div class="depoimentos__inner-wrapper text-white">
                         <div class="depoimentos__content text-center text-3xl leading-loose">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="depoimentos__slide relative slider__contents" id="slide-2">
-                    <img src="<?php echo get_theme_file_uri('./images/depoimentos-2.jpg') ?>" class="depoimentos__foto" data-anime="bottom" alt="">
+                    <img src="<?php echo get_theme_file_uri('/images/depoimentos-2.jpg') ?>" class="depoimentos__foto" data-anime="bottom" alt="">
                     <div class="depoimentos__foto--border"></div>
                     <div class="depoimentos__inner-wrapper text-white">
                         <div class="depoimentos__content text-center text-3xl leading-loose">
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="depoimentos__slide relative slider__contents" id="slide-3">
-                    <img src="<?php echo get_theme_file_uri('./images/depoimentos-3.jpg') ?>" class="depoimentos__foto" data-anime="bottom" alt="">
+                    <img src="<?php echo get_theme_file_uri('/images/depoimentos-3.jpg') ?>" class="depoimentos__foto" data-anime="bottom" alt="">
                     <div class="depoimentos__foto--border"></div>
                     <div class="depoimentos__inner-wrapper text-white">
                         <div class="depoimentos__content text-center text-3xl leading-loose">
