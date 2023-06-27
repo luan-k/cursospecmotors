@@ -102,28 +102,6 @@
             "multiple": 0,
             "return_format": "object",
             "ui": 1
-        },
-        {
-            "key": "field_6248e642fee69",
-            "label": "Nossos Cursos Post 3",
-            "name": "nossos_cursos_post_3",
-            "type": "post_object",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "post"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
         }
     ],
     "location": [
@@ -143,5 +121,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1683642317
+    "modified": 1687894049
 }
