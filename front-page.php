@@ -28,11 +28,11 @@
                         class="composition__photo composition__photo--p2"
                         src="<?php echo get_theme_file_uri('./images/quem-somos-2-large.jpg')?>">
 
-                    <img data-anime="right" srcset="<?php echo get_theme_file_uri('./images/quem-somos-3.jpg ')?> 300w, <?php echo get_theme_file_uri('./images/quem-somos-3-large.jpg')?> 1000w"
+                    <img data-anime="right" srcset="<?php echo get_theme_file_uri('./images/quem-somos-4.jpg ')?> 300w, <?php echo get_theme_file_uri('./images/quem-somos-4.jpg')?> 1000w"
                         sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                         alt="Photo 3"
                         class="composition__photo composition__photo--p3"
-                        src="<?php echo get_theme_file_uri('./images/quem-somos-3-large.jpg')?>">
+                        src="<?php echo get_theme_file_uri('./images/quem-somos-4.jpg')?>">
 
                 </div>
             </div>

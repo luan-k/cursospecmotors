@@ -64,7 +64,13 @@
                             <h4 class="title-3 text-4xl font-poppins font-bold mb-6">
                                 Cursos
                             </h4>
-                            <?php
+							<div class="footer-text">
+                                <a class="footer-text" href="<?php echo esc_url(site_url('/curso-de-manutencoes-preventivas-em-transmissoes-automaticas-modulo-i-ribeirao-preto-sp/')); ?>"> Curso De Manutenção Preventiva em Transmissões Automáticas - Modulo I - Ribeirão Preto/SP </a>
+                            </div>
+                            <div class="footer-text">
+                                <a class="footer-text" href="<?php echo esc_url(site_url('/curso-de-manutencao-preventiva-em-transmissoes-automaticas-modulo-ii-curitiba-pr/')); ?>">Curso de Manutenção Preventiva em Transmissões Automáticas - MODULO I - Curitiba/PR.</a>
+                            </div>
+                            <!-- <?php
                                 $footerPosts = new WP_Query(array(
                                 'posts_per_page' => 5,
                                 'orderby' => 'date',
@@ -79,7 +85,7 @@
                                     </a>
                                 </div>
 
-                            <?php } wp_reset_postdata(); ?>
+                            <?php } wp_reset_postdata(); ?> -->
                             <hr class="white">
                         </div>
 

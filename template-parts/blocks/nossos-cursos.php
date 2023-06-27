@@ -5,7 +5,7 @@ $subtitle     = get_field('nossos_cursos_subtitle');
 $description  = get_field('nossos_cursos_description');
 $post1        = get_field('nossos_cursos_post_1');
 $post2        = get_field('nossos_cursos_post_2');
-$post3        = get_field('nossos_cursos_post_3');
+//$post3        = get_field('nossos_cursos_post_3');
 
 if ( ! $title || empty( $title ) ) {
 	$title = 'Nossos Cursos';
@@ -40,7 +40,7 @@ if ( ! $title || empty( $title ) ) {
 <h4 class="cursos__subtitle font-poppins mt-12 text-2xl w-5/6 md:w-1/3 m-auto" data-anime="left">
     <?php echo $description ?>
 </h4>
-<div class="cursos__wrapper grid grid-cols-1 md:grid-cols-3 mt-16 gap-12">
+<div class="cursos__wrapper grid grid-cols-1 md:grid-cols-6 mt-16 gap-12">
     <?php
     if ( is_object( $post1 ) ) {
         $pec_cursos_1_id   	     = $post1->ID;
@@ -52,7 +52,7 @@ if ( ! $title || empty( $title ) ) {
         $pec_cursos_1_link       = get_the_permalink( $post1 );
 
         ?>
-        <div class="cursos__curso rounded-2xl" data-anime="left" style="background-image: url()">
+        <div class="cursos__curso rounded-2xl  md:col-span-2 md:col-start-2" data-anime="left" style="background-image: url()">
             <div class="cursos__curso--overlay"></div>
             <a href="<?php echo $pec_cursos_1_link ?>" class="cursos__curso--link relative w-full h-full transition-all duration-300">
                 <img src="<?php echo $pec_cursos_1_image; ?>" alt="" class="cursos__curso--img">
@@ -84,7 +84,7 @@ if ( ! $title || empty( $title ) ) {
         $pec_cursos_2_image 	 = get_the_post_thumbnail_url($post2->ID);
         $pec_cursos_2_link       = get_the_permalink( $post2 );
         ?>
-        <div class="cursos__curso rounded-2xl" data-anime="bottom" style="background-image: url()">
+        <div class="cursos__curso rounded-2xl md:col-span-2 md:col-start-4" data-anime="bottom" style="background-image: url()">
             <div class="cursos__curso--overlay"></div>
             <a href="<?php echo $pec_cursos_2_link ?>" class="cursos__curso--link relative w-full h-full transition-all duration-300">
                 <img src="<?php echo $pec_cursos_2_image; ?>" alt="" class="cursos__curso--img">
@@ -107,7 +107,7 @@ if ( ! $title || empty( $title ) ) {
         </div>
     <?php
     }
-    if ( is_object( $post3 ) ) {
+    /*  if ( is_object( $post3 ) ) {
         $pec_cursos_3_id   	     = $post3->ID;
         $pec_cursos_3_date       = get_field('curso_data', $pec_cursos_3_id);
         $pec_cursos_3_category	 = get_the_category($pec_cursos_3_id)[0]->name;
@@ -137,8 +137,8 @@ if ( ! $title || empty( $title ) ) {
                 </a>
             </a>
         </div>
-    <?php
-    }
+    	<?php
+    } */
 
     ?>
 </div>
