@@ -41,6 +41,7 @@ if ( ! function_exists( 'wkode_setup' ) ) :
 
 		add_image_size( 'vertical_big', 360, 530, true );
 		add_image_size( 'vertical_medium', 180, 265, true );
+		add_image_size( 'instructor_square', 350, 350, true, array( 'center', 'center' ) );
 		// add_image_size('magazine_mini', 343, 441, true) is defined in extras.php
 		// add_image_size('magazine_mega', 510, 666, true) is defined in extras.php
 

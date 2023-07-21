@@ -146,7 +146,7 @@
                                 possui especializações nos Estados Unidos e México.
                             </p>
                             <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
-                                Saiba Mais
+                                Veja Todos os Instrutores
                             </a>
                         </div>
                     </div>
@@ -171,7 +171,7 @@
                                 elétricos assim como em transmissões automáticas.
                             </p>
                             <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
-                                Saiba Mais
+                                Veja Todos os Instrutores
                             </a>
                         </div>
                     </div>

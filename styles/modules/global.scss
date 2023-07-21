@@ -27,13 +27,14 @@
 @use "pages/servicossingle/layout";
 @use "pages/contato";
 @use "pages/single/calendario";
+@use "pages/single/instructor";
 
 *,
 *::after,
 *::before {
+	box-sizing: inherit;
 	margin: 0;
 	padding: 0;
-	box-sizing: inherit;
 }
 /* ======================================== */
 /* ================scroolbar=================== */
@@ -77,10 +78,10 @@ html {
   } */
 
 body {
-	box-sizing: border-box; /* Padding and Margin are no longer part of the width and height of the element */
-	overflow-x: hidden;
-	min-height: 100vh;
 	background-color: #08061c;
+	box-sizing: border-box; /* Padding and Margin are no longer part of the width and height of the element */
+	min-height: 100vh;
+	overflow-x: hidden;
 }
 nav {
 	font-family: "poppins";
@@ -100,11 +101,11 @@ nav {
 	user-select: none !important;
 }
 #viewerContainer * {
+	cursor: default;
 	-webkit-user-select: none !important;
 	-moz-user-select: none !important;
 	-ms-user-select: none !important;
 	user-select: none !important;
-	cursor: default;
 }
 #documentPropertiesOverlay {
 	display: none !important;

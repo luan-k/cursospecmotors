@@ -39,6 +39,7 @@
 		"watch": "webpack --watch --mode development"
 	},
 	"dependencies": {
+		"@fancyapps/ui": "^5.0.20",
 		"concurrently": "^7.0.0",
 		"owl.carousel": "^2.3.4"
 	}

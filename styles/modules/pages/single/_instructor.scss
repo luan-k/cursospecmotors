@@ -1,0 +1,115 @@
+.wkode-single-instrutores-template__article {
+	padding-bottom: 15rem;
+}
+.wkode-single-instrutores-template__title {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 4.5rem;
+	font-weight: 600;
+	margin-bottom: 3.9rem;
+	margin-top: 6rem;
+	text-align: center;
+}
+
+.wkode-single-instrutores-instructor-profile-img {
+	@apply my-36;
+	img {
+		border-radius: 100%;
+		margin: auto;
+	}
+}
+
+.wkode-single-instrutores-template__carousel-title {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 4.5rem;
+	font-weight: 600;
+	margin-bottom: 3.9rem;
+	margin-top: 6rem;
+	text-align: center;
+}
+
+#myCarousel {
+	.f-carousel__slide {
+		width: calc(100% / 4);
+		img {
+			margin: auto;
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+	.f-carousel__nav {
+		svg {
+			path {
+				stroke: white;
+				stroke-width: 4;
+			}
+		}
+		button.f-button {
+			&.is-next {
+				right: -4rem !important;
+			}
+
+			&.is-prev {
+				left: -4rem !important;
+			}
+		}
+	}
+}
+
+.wkode-single-instrutores-template__content {
+	margin-bottom: 9rem;
+}
+
+.wkode-single-instrutores-template__experience-title {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 4.5rem;
+	font-weight: 600;
+	margin-bottom: 3.9rem;
+	margin-top: 12rem;
+	text-align: center;
+}
+.wkode-single-instrutores__experiences {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3rem;
+	.instructor-list-icon {
+		height: 3rem;
+		width: 3rem;
+		@apply bg-pec-bluelight;
+	}
+	.instrutor-experience-time-company-wrapper {
+		align-content: center;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		gap: 5rem;
+	}
+	.instrutor-experience-description {
+		font-family: inherit;
+		font-size: 2rem;
+	}
+	.instrutor-experience-time-company {
+		display: flex;
+		flex-direction: column;
+		font-family: inherit;
+		justify-content: center;
+	}
+	.instrutor-experience-company,
+	.instrutor-experience-time {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.instrutores-experience {
+		font-family: Arial, Helvetica, sans-serif;
+		&:not(:last-of-type) {
+			margin-bottom: 6rem;
+		}
+	}
+	.instrutor-experience-title {
+		font-family: Arial, Helvetica, sans-serif;
+		margin-bottom: 2.1rem;
+	}
+}
